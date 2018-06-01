@@ -17,7 +17,7 @@
 
         public override string ToString()
         {
-            return string.Format("{0}-{1}-{2}", Name, Alpha2Code, Alpha3Code);
+            return $"{Name}-{Alpha2Code}-{Alpha3Code}";
         }
     }
 }
