@@ -1,11 +1,11 @@
-﻿using System.Net.Http;
-using System.Threading.Tasks;
-
-namespace DemoLibrary
+﻿namespace DemoLibrary
 {
-    public static class EnergyData
+    using System.Net.Http;
+    using System.Threading.Tasks;
+
+    public class WebClient
     {
-        public static async Task<string> GetCountries()
+        public async Task<string> GetCountryDataAsync()
         {
             using (var httpClient = new HttpClient())
             {

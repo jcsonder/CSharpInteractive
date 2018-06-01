@@ -7,9 +7,13 @@
     {
         public static void Main(string[] args)
         {
-            var energyDemandRaw = EnergyData.GetCountries().Result;
-            Console.WriteLine("Raw Data:");
-            Console.WriteLine(energyDemandRaw.Substring(1, 1000) + "...");
+            CountryService countryService = new CountryService(new WebClient());
+
+            var countries = countryService.GetCountriesAsync().GetAwaiter().GetResult();
+            foreach (var country in countries)
+            {
+                Console.WriteLine(country);
+            }
 
             Console.ReadKey();
         }
