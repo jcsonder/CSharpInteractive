@@ -14,9 +14,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreDemoLibrary", "CoreDemo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreDemoClient", "CoreDemoClient\CoreDemoClient.csproj", "{EE805E4C-9D5D-42FD-81F4-3AB7B1773E59}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Script", "Script", "{3CAB291B-7603-4D6F-AC9C-5B2A5A6A30B5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Script", "Script", "{07CBEA4D-7C7D-4979-9C2F-8C7FB335057C}"
 	ProjectSection(SolutionItems) = preProject
 		Script\HelloWorld.csx = Script\HelloWorld.csx
+		Script\omnisharp.json = Script\omnisharp.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".vscode", ".vscode", "{55DB439C-72B0-4495-92F4-481C48A16B16}"
+	ProjectSection(SolutionItems) = preProject
+		Script\.vscode\launch.json = Script\.vscode\launch.json
 	EndProjectSection
 EndProject
 Global
@@ -36,6 +42,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{55DB439C-72B0-4495-92F4-481C48A16B16} = {07CBEA4D-7C7D-4979-9C2F-8C7FB335057C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CCC6E9D9-7DDE-439F-A57C-A57696A55E2E}
